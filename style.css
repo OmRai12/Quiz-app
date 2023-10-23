@@ -1,0 +1,106 @@
+body{
+  background-color: darkblue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container{
+  margin: auto;
+  position: relative;
+  top: 100px;
+  width: 40%;
+  height: 70vh;
+  background-color: white;
+  border-radius: 8px;
+}
+.container-information{
+  margin: auto;
+  width: 70%;
+  position: relative;
+  top: 20px;
+}
+.container-title{
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 30, 77);
+  border-bottom: 1px solid grey;
+  width: 89%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.question-quiz{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 30, 77);
+}
+
+.option{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.option div{
+  border: 1px solid black;
+  width: 89%;
+  padding: 5px 0px 5px 5px;
+  cursor: pointer;
+}
+.Next-button-div{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 89%;
+}
+.Next-button{
+  color: white;
+  background-color: rgb(0, 30, 77);
+  border: none;
+  padding: 10px 40px 10px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 1109px) {
+  .container-information{
+    position: relative;
+    left: 10px;
+  }
+}
+@media (max-width: 743px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 506px) {
+  .container-title{
+    font-size: 25px;
+  }
+  .container{
+    width: 90%;
+    height: 75vh;
+  }
+}
+@media (max-width: 421px) {
+  .container-title{
+    font-size: 22px;
+  }
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .container-title{
+    font-size: 18px;
+  }
+}
+@media (max-width: 233px) {
+  .container{
+    position: relative;
+    top: 70px;
+    height: 80vh;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-information">
+      <div class="container-title">Simple Quiz</div>
+      <div class="question-quiz">Question is here</div>
+      <div class="option">
+        <div class="option-A" onclick="checkanswer('a')">Option-A</div>
+        <div class="option-B" onclick="checkanswer('b')">Option-B</div>
+        <div class="option-C" onclick="checkanswer('c')">Option-C</div>
+        <div class="option-D" onclick="checkanswer('d')">Option-D</div>
+      </div>
+      <div class="Next-button-div">
+        <button class="Next-button" onclick="nextquestion()" style="display: none;">Next</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="final-page" style="display: none;">
+      <h2>Quiz Completed</h2>
+      <p> <span class="score"></span> </p>
+      <button class="finish-button" onclick="finishbutton()">Finish</button>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
